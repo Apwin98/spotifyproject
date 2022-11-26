@@ -7,6 +7,8 @@ import { getTokenFromUrl } from './components/Spotify'
 import { useStateValue } from './utils/StateProvider'
 import SpotifyWebApi from "spotify-web-api-js";
 
+import LandingPage from "./components/LandingPage";
+
 const spotify = new SpotifyWebApi();
 // import Playlists from './components/Playlists'
 function App() {
@@ -50,9 +52,9 @@ function App() {
   // console.log(user);
   // console.log(token);
   return (
-    <div className="App">
+    <div>
       {
-        token? <Footer/>:
+        token? <LandingPage/>:
         <Login/>
       }
       {/* <Login/> */}
