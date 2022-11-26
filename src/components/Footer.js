@@ -2,16 +2,9 @@ import { React, useEffect, useState } from 'react'
 import { useStateValue } from '../utils/StateProvider'
 import axios from 'axios'
 import './Footer.css'
-
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './DisplayFooter.css'
-
-
 import SpotifyPlayer from 'react-spotify-web-playback'
-
-import GrabSongs from './GrabSongs'
-// import UnevenSetsInfinite from './Slider'
-// import DisplayFooter from './DisplayFooter'
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
@@ -53,11 +46,11 @@ function Footer() {
         ]
       };
 
-    const [songId, setSongId] = useState([])
+    
     const [playlist, setPlaylist] = useState([])
     const [music, setMusic] = useState('')
     const [auto, setAuto] = useState('false')
-    // const [{ playlists }, dispatch] = useStateValue()
+    
     const [{ token }, dispatch] = useStateValue()
     function changeMusic(id) {
       setMusic(id);
