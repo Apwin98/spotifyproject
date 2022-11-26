@@ -1,6 +1,7 @@
 export const authEndpoint = "https://accounts.spotify.com/authorize";
 const clientId = "0251a94b97ce4e47943e4fc8ea7a6ab2";
-const redirectUrl = "http://localhost:3000/";
+// const redirectUrl = "http://localhost:3000/";
+const redirectUrl = "https://spotifyproject-nine.vercel.app/";
 
 const scopes = [
     'streaming',
